@@ -57,7 +57,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">K. Accessories</p>
+          <p class="font-bold CardInnerText">K. Accessories</p>
           <p>39.00 TK</p>
 
         </div>
@@ -81,7 +81,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">K. Accessories</p>
+          <p class="font-bold CardInnerText">K. Accessories</p>
           <p>25.00 TK</p>
 
         </div>
@@ -105,7 +105,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">Home Cooker</p>
+          <p class="font-bold CardInnerText">Home Cooker</p>
           <p>49.00 TK</p>
 
         </div>
@@ -129,7 +129,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">Sports Back Cap</p>
+          <p class="font-bold CardInnerText">Sports Back Cap</p>
           <p>69.00 TK</p>
 
         </div>
@@ -153,7 +153,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">Full Jersey Set</p>
+          <p class="font-bold CardInnerText">Full Jersey Set</p>
           <p>45.00 TK</p>
 
         </div>
@@ -177,7 +177,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">Sports cates</p>
+          <p class="font-bold CardInnerText">Sports cates</p>
           <p>159.00 TK</p>
 
         </div>
@@ -202,7 +202,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">Single Relax Chair</p>
+          <p class="font-bold CardInnerText">Single Relax Chair</p>
           <p>69.00 TK</p>
 
         </div>
@@ -226,7 +226,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">Children play</p>
+          <p class="font-bold CardInnerText">Children play</p>
           <p>45.00 TK</p>
 
         </div>
@@ -250,7 +250,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
 
-          <p class="font-bold">Flexible Sofa</p>
+          <p class="font-bold CardInnerText">Flexible Sofa</p>
           <p>159.00 TK</p>
 
         </div>
@@ -271,21 +271,19 @@
 <div class="lg:w-[20%] ">
 
     <!-- apply  -->
-    <div class="bg-[#FFFFFF] shadow-xl p-6   rounded-xl">
+    <div class="bg-[#FFFFFF] shadow-xl p-6 rounded-xl">
         <h4 class="text-lg font-bold">Have coupon?</h4>
 
-       <div class="flex"><input type="text" placeholder="Coupon code" class="px-1 outline-none "><button class="p-3 text-white rounded-r-xl font-bold bg-[#E527B2] -ml-12">Apply</button></div>
+       <div class="flex"><input type="text" placeholder="Coupon code" class="px-1 outline-none " id="Input"><button class="p-3 text-white rounded-r-xl font-bold bg-[#E527B2] -ml-12" onclick="Apply()" id="Apply">Apply</button></div>
     </div>
 
     <div class="bg-[#ffffff] shadow-2xl p-6 mt-6">
-<ol type="1" class="border-b-2 border-black my-3 py-4 *:font-bold">
-    <li>1. Home Cooker</li>
-    <li>2. Sports cates</li>
-    <li>2. Sports cates</li>
+<ol type="1" class="border-b-2 border-black my-3 py-4 *:font-bold" id="container">
+    
 </ol>
 
 <div class="border-b-2 border-black my-3 py-4 *:font-bold">
-    <p>Total price :</p>
+    <p>Total price:<span id="totalprice"></span></p>
     <p>Discount :</p>
     <p>Total :</p>
 </div>
@@ -304,7 +302,7 @@
 
 
 <footer></footer>
-
+<script src="common.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
