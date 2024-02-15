@@ -26,26 +26,49 @@ card.addEventListener('click',function(){
   element.appendChild(p);
 total=taka+total;
 totalElement.innerText=' '+total;
-
-
 list++
 })
 
 
+function Apply(){
+
+if(total<200){
+  return alert('first you have to shop more then equal 200')
 }
 
-
-
-
-
-
-
-function Apply(){
+else if(total>=200){
 
   const element=getElementById('Apply');
   element.style.background='red'
-  const value=getElementById('Input').value;
-  console.log(value)
-  console.log(InputValue)
+  let value=getElementById('Input').value;
+  value=value.toLowerCase();
+if(value=='sell200'){
+
+  const discountTaka=parseInt(total * 0.2);
+  const discount=total-discountTaka;
+const discountId=getElementById('Discount');
+discountId.innerText=discountTaka;
+getElementById('DiscountTotal').innerText=discount;
+ 
+}
+
 
 }
+
+
+
+
+
+// ///////// start here
+}
+
+
+
+
+}
+
+
+
+
+
+
