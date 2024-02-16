@@ -42,6 +42,12 @@ else if(total>=200){
   element.style.background='red'
   let value=getElementById('Input').value;
   value=value.toLowerCase();
+  value=value.split(' ') //// START HERE
+  value=value.join('')
+if(value!=="sell200"){
+  return alert('please Enter a valid Input')
+}
+
 if(value=='sell200'){
 
   const discountTaka=parseInt(total * 0.2);
